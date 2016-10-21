@@ -1,4 +1,3 @@
-var webpack = require('webpack');
 var webpackMerge = require('webpack-merge');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var commonConfig = require('./webpack.common.js');
@@ -9,13 +8,9 @@ module.exports = webpackMerge(commonConfig, {
 
   output: {
     path: helpers.root('.tmp'),
-    publicPath: '/',
+    publicPath: 'http://localhost:8000/',
     filename: '[name].js',
     chunkFilename: '[id].chunk.js'
-  },
-
-  htmlLoader: {
-    minimize: false // workaround for ng2
   },
 
   plugins: [
