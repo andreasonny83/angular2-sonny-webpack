@@ -8,6 +8,15 @@
     "experimentalDecorators": true,
     "removeComments": false,
     "noImplicitAny": true,
+    "pretty": true,
     "suppressImplicitAnyIndexErrors": true
-  }
+  },
+  "exclude": [
+      "node_modules",
+      "typings/browser",
+      "typings/browser.d.ts"
+  ],
+  "compileOnSave": false,
+  "buildOnSave": false,
+  "atom": { "rewriteTsconfig": false }
 }
