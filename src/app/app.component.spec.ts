@@ -1,14 +1,14 @@
-import { TestBed } from '@angular/core/testing';
-
-import { AppComponent } from './app.component';
+import { inject, TestBed } from '@angular/core/testing';
+import { AppComponent }    from './app.component';
 
 describe('App', () => {
-  beforeEach(() => {
-    TestBed.configureTestingModule({ declarations: [AppComponent]});
-  });
+  beforeEach(() => TestBed.configureTestingModule({
+    providers: [
+      AppComponent
+    ]
+  }));
 
-  it ('should work', () => {
-    let fixture = TestBed.createComponent(AppComponent);
-    expect(fixture.componentInstance instanceof AppComponent).toBe(true, 'should create AppComponent');
-  });
+  it('should have a url', inject([ AppComponent ], (app: AppComponent) => {
+    expect(app.url).toEqual('https://github.com/andreasonny83');
+  }));
 });

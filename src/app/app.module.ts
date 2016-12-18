@@ -1,15 +1,39 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule }  from '@angular/platform-browser';
+/**
+ * angular2-sonny-webpack
+ *
+ * Copyright 2016, Andrea Sonny, All rights reserved.
+ *
+ * @author: Andrea Sonny <andreasonny83@gmail.com>
+ */
+import { NgModule }            from '@angular/core';
+import { BrowserModule }       from '@angular/platform-browser';
+import { RouterModule }        from '@angular/router';
+import { FormsModule }         from '@angular/forms';
+import { HttpModule }          from '@angular/http';
 
-import { AppComponent } from './app.component';
+import { AppRoutingModule }    from './app.routes';
 
+import { AppComponent }        from './app.component';
+import { HomeComponent }      from './home';
+import { NoContentComponent }  from './no-content';
+
+/**
+ * `AppModule` is the main entry point into Angular2's bootstraping process
+ */
 @NgModule({
-  imports: [
-    BrowserModule
-  ],
+  bootstrap: [ AppComponent ],
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    NoContentComponent
   ],
-  bootstrap: [ AppComponent ]
+  imports: [ // import Angular's modules
+    BrowserModule,
+    FormsModule,
+    HttpModule,
+    AppRoutingModule
+  ],
+  providers: [ // expose our Services and Providers into Angular's dependency injection
+  ]
 })
 export class AppModule { }
