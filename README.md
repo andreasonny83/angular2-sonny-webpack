@@ -16,13 +16,13 @@
 
 ```bash
 # To get the latest stable version and update package.json file:
-npm install angular2-cookie-law --save
+npm install
 ```
 
 or `yarn` with:
 
 ```bash
-yarn add angular2-cookie-law
+yarn install
 ```
 
 ## Usage
