@@ -1,10 +1,11 @@
 /**
  * angular2-sonny-webpack
  *
- * Copyright 2016, Andrea Sonny, All rights reserved.
+ * Copyright 2016-2017, Andrea Sonny, All rights reserved.
  *
  * @author: Andrea Sonny <andreasonny83@gmail.com>
  */
+
 const helpers = require('./helpers');
 const webpackMerge = require('webpack-merge'); // used to merge webpack configs
 const commonConfig = require('./webpack.common.js'); // the settings that are common to prod and dev

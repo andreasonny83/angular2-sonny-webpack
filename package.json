@@ -1,6 +1,6 @@
 {
   "name": "angular2-sonny-webpack",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A webpack starter kit for Angular",
   "keywords": [
     "angular2",
@@ -8,7 +8,7 @@
     "typescript"
   ],
   "author": "Andrea Sonny <andreasonny83@gmail.com>",
-  "homepage": "https://github.com/andreasonny83/angular2-sonny-webpack",
+  "homepage": "https://github.com/andreasonny83/angular2-sonny-webpack#readme",
   "license": "MIT",
   "scripts": {
     "build:dev": "webpack --config config/webpack.dev.js --progress --profile",
@@ -82,6 +82,7 @@
     "http-server": "^0.9.0",
     "imports-loader": "^0.6.5",
     "istanbul-instrumenter-loader": "0.2.0",
+    "jasmine-core": "^2.5.2",
     "json-loader": "^0.5.4",
     "karma": "^1.3.0",
     "karma-chrome-launcher": "^2.0.0",
@@ -111,15 +112,10 @@
     "webpack-md5-hash": "^0.0.5",
     "webpack-merge": "~1.0.1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/andreasonny83/angular2-sonny-webpack.git"
-  },
+  "private": true,
+  "repository": "git@github.com:andreasonny83/angular2-sonny-webpack.git",
   "bugs": {
     "url": "https://github.com/andreasonny83/angular2-sonny-webpack/issues"
   },
-  "engines": {
-    "node": ">= 5",
-    "npm": ">= 3"
-  }
+  "main": "index.js"
 }

@@ -1,10 +1,11 @@
 /**
  * angular2-sonny-webpack
  *
- * Copyright 2016, Andrea Sonny, All rights reserved.
+ * Copyright 2016-2017, Andrea Sonny, All rights reserved.
  *
  * @author: Andrea Sonny <andreasonny83@gmail.com>
  */
+
 module.exports = function(config) {
   var testWebpackConfig = require('./webpack.test.js')({env: 'test'});
 
