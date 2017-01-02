@@ -1,6 +1,8 @@
-# angular2-sonny-webpack
+# angular2-sonny-webpack 
 
-> A webpack starter kit for Angular
+![angular2-logo](http://i.imgur.com/50XbMNR.png)
+
+A Webpack starter kit for you Angular2 progressive web app
 
 ## Table of contents
 
