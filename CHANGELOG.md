@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.1 - 2017.01.02
+
+*   App manifest updated
+
 ## 1.1.0 - 2017.01.02
 
 *   Service worker for offline support
