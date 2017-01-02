@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.2- 2017.01.02
+
+*   Removed `index.ts` to avoid barrel issue
+
 ## 1.1.1 - 2017.01.02
 
 *   App manifest updated
