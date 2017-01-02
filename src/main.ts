@@ -17,6 +17,11 @@ import { AppModule }              from './app';
 if ('production' === ENV) {
  // Production
  enableProdMode();
+ if ('serviceWorker' in navigator) {
+   navigator.serviceWorker.register('/service-worker.js').catch(function(err) {
+     console.log('Error installing service worker: ', err);
+   });
+ }
 }
 
 /*

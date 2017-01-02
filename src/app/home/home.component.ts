@@ -9,7 +9,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'home',
+  selector: 'sg-home',
   template: `
     <h1>Angular2 Sonny Webpack</h1>
   `

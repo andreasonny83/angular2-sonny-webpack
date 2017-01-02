@@ -9,7 +9,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app',
+  selector: 'sg-app',
   styleUrls: ['./app.component.css'],
   template: `
     <nav>
@@ -25,11 +25,11 @@ import { Component, OnInit } from '@angular/core';
     </main>
 
     <footer>
-      <span>Copyright 2016, <a [href]="url">andreasonny83</a>, All rights reserved.</span>
+      <span>Copyright 2016-2017, <a [href]="url">andreasonny83</a>, All rights reserved.</span>
     </footer>
   `
 })
-export class AppComponent extends OnInit {
+export class AppComponent implements OnInit {
   url = 'https://github.com/andreasonny83';
 
   ngOnInit() {

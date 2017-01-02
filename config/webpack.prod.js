@@ -199,7 +199,7 @@ module.exports = function (env) {
           }
         }
       })
-    ]
+    ],
 
     /*
      * Include polyfills or mocks for various node stuff

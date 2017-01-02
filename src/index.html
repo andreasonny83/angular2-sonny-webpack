@@ -9,23 +9,20 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title><%= htmlWebpackPlugin.options.title %></title>
-
     <meta name="description" content="<%= htmlWebpackPlugin.options.title %>">
+    <!-- base url -->
+    <base href="<%= htmlWebpackPlugin.options.metadata.baseUrl %>">
 
     <% if (webpackConfig.htmlElements.headTags) { %>
     <!-- Configured Head Tags  -->
     <%= webpackConfig.htmlElements.headTags %>
     <% } %>
-
-    <!-- base url -->
-    <base href="<%= htmlWebpackPlugin.options.metadata.baseUrl %>">
   </head>
   <body>
-    <app>
+    <sg-app>
       Loading...
-    </app>
+    </sg-app>
 
     <!-- Google Analytics: change UA-71073175-1 to be your site's ID -->
     <script>
@@ -38,7 +35,7 @@
       ga('send', 'pageview');
     </script>
 
-    <% if (htmlWebpackPlugin.options.metadata.isDevServer && htmlWebpackPlugin.options.metadata.HMR !== true) { %>
+    <% if (htmlWebpackPlugin.options.metadata.isDevServer) { %>
     <!-- Webpack Dev Server reload -->
     <script src="/webpack-dev-server.js"></script>
     <% } %>
