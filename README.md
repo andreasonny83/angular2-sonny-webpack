@@ -1,8 +1,8 @@
-# angular2-sonny-webpack 
+# Angular2 Sonny Webpack 
 
 ![angular2-logo](http://i.imgur.com/50XbMNR.png)
 
-A Webpack starter kit for you Angular2 progressive web app
+A Webpack starter kit for you Angular2+ progressive web app
 
 ## Table of contents
 
@@ -18,16 +18,24 @@ A Webpack starter kit for you Angular2 progressive web app
 
 ## Installation
 
-Install the component using `npm`:
+Clone this repository
 
-```bash
-# To get the latest stable version and update package.json file:
-$ npm install
+```sh
+$ git clone https://github.com/andreasonny83/angular2-sonny-webpack.git
 ```
 
-or `yarn` with:
+Change directory to our repo
+
+```sh
+$ cd angular2-sonny-webpack
+```
+
+Install the node dependencies
 
 ```bash
+# You can either use npm with
+$ npm install
+# Or Yarn for a faster installation
 $ yarn install
 ```
 
