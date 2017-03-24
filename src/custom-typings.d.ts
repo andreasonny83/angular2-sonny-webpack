@@ -15,9 +15,5 @@ interface GlobalEnvironment {
   ENV: string;
 }
 
-interface Navigator {
-  serviceWorker: any;
-}
-
 // Extend typings
 interface Global extends GlobalEnvironment  {}

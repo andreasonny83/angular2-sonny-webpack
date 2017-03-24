@@ -153,7 +153,7 @@ module.exports = function (options) {
        *
        * See: https://github.com/s-panferov/awesome-typescript-loader#forkchecker-boolean-defaultfalse
        */
-      new ForkCheckerPlugin(),
+      // new ForkCheckerPlugin({}),
       /*
        * Plugin: CommonsChunkPlugin
        * Description: Shares common code between the pages.
@@ -175,7 +175,8 @@ module.exports = function (options) {
        */
       new ContextReplacementPlugin(
         // The (\\|\/) piece accounts for path separators in *nix and Windows
-        /angular(\\|\/)core(\\|\/)src(\\|\/)linker/,
+        // /angular(\\|\/)core(\\|\/)src(\\|\/)linker/, // Angular 2
+        /angular(\\|\/)core(\\|\/)@angular/, // Angular 4
         helpers.root('src'), // location of your src
         {
           // your Angular Async Route paths relative to this root directory

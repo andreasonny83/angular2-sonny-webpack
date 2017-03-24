@@ -7,11 +7,7 @@
  */
 
 const helpers = require('./helpers');
-const path = require('path');
 
-/**
- * Webpack Plugins
- */
 const ProvidePlugin = require('webpack/lib/ProvidePlugin');
 const DefinePlugin = require('webpack/lib/DefinePlugin');
 const LoaderOptionsPlugin = require('webpack/lib/LoaderOptionsPlugin');
@@ -55,7 +51,10 @@ module.exports = function (options) {
       /**
        * Make sure root is src
        */
-      modules: [ path.resolve(__dirname, 'src'), 'node_modules' ]
+      modules: [
+        helpers.root('node_modules'),
+        helpers.root('src'),
+      ]
 
     },
 
@@ -186,7 +185,8 @@ module.exports = function (options) {
        */
       new ContextReplacementPlugin(
         // The (\\|\/) piece accounts for path separators in *nix and Windows
-        /angular(\\|\/)core(\\|\/)(esm(\\|\/)src|src)(\\|\/)linker/,
+        // /angular(\\|\/)core(\\|\/)src(\\|\/)linker/, // Angular 2
+        /angular(\\|\/)core(\\|\/)@angular/, // Angular 4
         helpers.root('src'), // location of your src
         {
           // your Angular Async Route paths relative to this root directory
