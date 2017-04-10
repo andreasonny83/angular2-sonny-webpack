@@ -10,8 +10,6 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'sg-home',
-  template: `
-    <h1>Angular2 Sonny Webpack</h1>
-  `
+  templateUrl: './home.component.html'
 })
 export class HomeComponent { }
