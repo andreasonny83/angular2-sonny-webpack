@@ -112,7 +112,18 @@ module.exports = function (options) {
          */
         {
           test: /\.css$/,
+          include: [
+            helpers.root('src'),
+          ],
           use: ['to-string-loader', 'css-loader']
+        },
+
+        {
+          test: /\.scss$/,
+          include: [
+            helpers.root('src'),
+          ],
+          use: ['raw-loader', 'css-loader', 'sass-loader']
         },
 
         /* Raw loader support for *.html

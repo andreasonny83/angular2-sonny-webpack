@@ -10,7 +10,9 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'sg-app',
-  styleUrls: ['./app.component.css'],
+  styleUrls: [
+    './app.component.scss'
+  ],
   template: `
     <nav>
       <span>
