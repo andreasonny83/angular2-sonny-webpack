@@ -6,20 +6,23 @@ describe('App', () => {
   });
 
   it('should have a title', () => {
-    let subject = browser.getTitle();
-    let result  = 'Angular2 Sonny Webpack';
+    let subject: any = browser.getTitle();
+    let result: string = 'Angular2 Sonny Webpack';
+
     expect(subject).toEqual(result);
   });
 
   it('should have header', () => {
-    let subject = element(by.css('h1')).isPresent();
-    let result  = true;
+    let subject: any = element(by.css('h1')).isPresent();
+    let result: boolean = true;
+
     expect(subject).toEqual(result);
   });
 
   it('should have <home>', () => {
-    let subject = element(by.css('sg-app sg-home')).isPresent();
-    let result  = true;
+    let subject: any = element(by.css('sg-app sg-home')).isPresent();
+    let result: boolean  = true;
+
     expect(subject).toEqual(result);
   });
 });
